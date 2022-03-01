@@ -1,0 +1,16 @@
+{
+  "name": "alert-bot2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.2",
+    "discord.js-selfbot": "^12.0.2",
+    "dotenv": "^16.0.0"
+  }
+}
