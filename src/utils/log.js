@@ -1,6 +1,6 @@
 const getCurrentDateFormat = () => {
     let date = new Date();
-    return {color: "\x1b[36m%s\x1b[0m", date:`${date.getFullYear()}-${date.getMonth() < 10? "0" + date.getMonth()+1: date.getMonth()+1}-${date.getDate() < 10? "0" + date.getDate():date.getDate()} ${date.getHours() < 10?"0" + date.getHours():date.getHours()}:${date.getMinutes() < 10? "0" + date.getMinutes():date.getMinutes()}:${date.getSeconds() < 10? "0" + date.getSeconds(): date.getSeconds()}.${date.getMilliseconds()}`}
+    return {color: "\x1b[36m%s\x1b[0m", date:`${date.getFullYear()}-${date.getMonth() < 10? "0" + (date.getMonth()+1): (date.getMonth()+1)}-${date.getDate() < 10? "0" + date.getDate():date.getDate()} ${date.getHours() < 10?"0" + date.getHours():date.getHours()}:${date.getMinutes() < 10? "0" + date.getMinutes():date.getMinutes()}:${date.getSeconds() < 10? "0" + date.getSeconds(): date.getSeconds()}.${date.getMilliseconds()}`}
 };
 
 
